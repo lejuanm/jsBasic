@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cosmo/bootstrap.min.css"
+    />
+    <title>localEstorage</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="#">localEstorage</a>
+    </nav>
+    <div class="container-fluid">
+      <form id="form" action="" class="w-75 float-left mb-20">
+        <div class="form-controls">
+          <h4 for="addPelicula">Añadir</h4>
+          <input
+            class="form-control w-75"
+            type="text"
+            placeholder="Ingresa tu pelicula"
+            id="addPelicula"
+          />
+        </div>
+        <br />
+        <button class="btn btn-outline-success" type="submit">Save</button>
+      </form>
+      <br />
+
+      <div
+        id="peliculas"
+        class="card border-success w-25 float-right col-6"
+        style="max-width: 20rem;"
+      >
+        <div class="card-header">DATOS USUARIO</div>
+        <div class="card-body"></div>
+      </div>
+      <br />
+      <form id="formb" action="" class="w-75 mt-8">
+        <div class="form-controls">
+          <h4 for="addPelicula">Borrar</h4>
+          <input
+            class="form-control w-75"
+            type="text"
+            placeholder="Ingresa tu pelicula"
+            id="delPelicula"
+          />
+        </div>
+        <br />
+        <button class="btn btn-outline-success" type="submit">Delete</button>
+      </form>
+    </div>
+    <script src="localEstorage.js"></script>
+  </body>
+</html>
